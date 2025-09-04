@@ -22,9 +22,11 @@ body {
 }
 
 .person {
+  background-color: #fff;
   width: 220px;
   height: 250px;
   padding: 10px;
+  transition: scale 1s 1s;
   overflow: hidden;
 }
 
@@ -77,7 +79,13 @@ body {
 }
 
 .person:hover {
+  z-index: 1;
   background-color: #eee;
   overflow: visible;
+  transform: scale(1.32);
+}
+
+.person:hover .person__img {
+  border-radius: 60px;
 }
 /*# sourceMappingURL=css-practise.b1276d39.css.map */
